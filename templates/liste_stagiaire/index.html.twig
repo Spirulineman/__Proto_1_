@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}__Liste des stagiaires__{% endblock %}
+
+{% block body %}
+
+    <ul>
+        {% for liste in listes %}
+            <li>
+                {{liste.civilite}}
+            </li>
+        {% endfor %}
+    </ul>
+
+
+{% endblock %}

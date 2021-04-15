@@ -6,18 +6,16 @@
 {% block body %}
 	<div>
 
-		{% for Rappels in Rappels %}
-			<table>
-				<thead>
-					<th> Rappels</th>
-				</thead>
+		<ul>
+{% for id in Rappels %}
 
 
-			</table>
+
+				<li>{{civilite}}</li>
 
 
-		{% endfor %}
-
+			{% endfor %}
+		</ul>
 	</div>
 
 
