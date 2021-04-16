@@ -45,17 +45,17 @@ class ListeStagiaire
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $email;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
     private $formation;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
     private $annee;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $email;
 
     public function getId(): ?int
     {
@@ -120,18 +120,7 @@ class ListeStagiaire
         $this->telephone = $telephone;
     }
 
-    public function getEmail(): ?string
-    {
-        return $this->telephone;
-    }
-
-    public function setEmail(string $email): self
-    {
-        $this->email = $email;
-
-        return $this;
-    }
-
+    
     public function getFormation(): ?string
     {
         return $this->formation;
@@ -152,6 +141,18 @@ class ListeStagiaire
     public function setAnnee(string $annee): self
     {
         $this->annee = $annee;
+
+        return $this;
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this->email = $email;
 
         return $this;
     }

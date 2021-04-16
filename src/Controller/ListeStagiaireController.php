@@ -22,25 +22,9 @@ class ListeStagiaireController extends AbstractController
     #[Route('/liste', name: 'liste_stagiaire')]
     public function index(EntityManagerInterface $em): Response
     {
-        /* 
-        $stagiaire = $this->entityManager->getRepository(ListeStagiaire::class)->findAll();
+           $repo = $em->getRepository(ListeStagiaire::class);
 
-        return $this->render('liste_stagiaire/index.html.twig', [
-            'civilite' => $stagiaire,
-            'nom'=> $stagiaire,
-            'prenom' => $stagiaire,
-            'adresse' => $stagiaire,
-            'telephone' => $stagiaire,
-            'email' => $stagiaire,
-            'formation' => $stagiaire,
-            'annee' => $stagiaire 
-            
-
-        ]);*/
-
-            $repo = $em->getRepository(ListeStagiaire::class);
-
-           /*  dd($repo->findAll()); */
+            /* dd($repo->findAll()); */
 
             $liste = $repo->findAll();
 

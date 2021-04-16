@@ -1,16 +1,30 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}__Liste des stagiaires__{% endblock %}
+{% block title %}__Liste des stagiaires__
+{% endblock %}
 
 {% block body %}
 
-    <ul>
-        {% for liste in listes %}
-            <li>
-                {{liste.civilite}}
-            </li>
-        {% endfor %}
-    </ul>
+	<ul>
+		{% for liste in listes %}
+			<li>
+				n°{{loop.index ~ ' / ' ~ loop.length}}
+				- id :
+				{{liste.id}}<br>
+				{{liste.civilite ~ '  ' ~ liste.nom ~ '  ' ~ liste.prenom}}<br>
+				- Adresse : {{liste.adresse}}
+                - Téléphone : {{liste.telephone}}
+                - Mail : {{liste.email}}
+                <h6>{{liste.formation}}</h6>
+                - Année : {% if not liste.annee %}
+                                <h7> - Non communiqué - </h7>
+                            {% else %}
+                                <h7-2>{{liste.annee}}</h7-2>
+                          {% endif %}
+			</li>
+		<hr>
+		{% endfor %}
+	</ul>
 
 
 {% endblock %}

@@ -88,6 +88,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  
 }
 p {
   margin-top: 0;
@@ -331,6 +332,8 @@ h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  color: #007bff;
+  font-weight: bold;
 }
 .h1,
 h1 {
@@ -355,6 +358,22 @@ h5 {
 .h6,
 h6 {
   font-size: 1rem;
+}
+.h7,
+h7 {
+  font-size: 0.75em ;
+  color: #cc4b18;
+  font-family: cursive;
+
+}
+.h7-2,
+h7-2 {
+  font-size: 0.75em ;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #138496;
+  font-family: cursive;
+
 }
 .lead {
   font-size: 1.25rem;
