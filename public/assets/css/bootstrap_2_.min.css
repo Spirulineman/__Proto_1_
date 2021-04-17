@@ -357,7 +357,9 @@ h5 {
 }
 .h6,
 h6 {
-  font-size: 1rem;
+  font-size: 0.90rem;
+  text-align: right;
+  padding-right: 25mm;
 }
 .h7,
 h7 {
@@ -373,7 +375,26 @@ h7-2 {
   font-weight: bold;
   color: #138496;
   font-family: cursive;
+  text-align: center;
 
+}
+.annee,
+annee {
+  text-align: center;
+}
+.champs,
+champs {
+font-weight: bolder;
+color: rgba(231, 148, 40, 0.652);
+font-size: small;
+}
+.civilite,
+civilite {
+   font-size: 1em ;
+  font-weight: bold;
+  color: #138496;
+  font-family: cursive;
+  text-align: center;
 }
 .lead {
   font-size: 1.25rem;
