@@ -98,7 +98,7 @@ class AuthAdminAuthenticator extends AbstractFormLoginAuthenticator implements P
 
         // For example : return new RedirectResponse($this->urlGenerator->generate('some_route'));
         /* throw new \Exception('TODO: provide a valid redirect inside '.__FILE__); */
-        return new RedirectResponse($this->urlGenerator->generate('liste_stagiaire'));
+        return new RedirectResponse($this->urlGenerator->generate('liste_stagiaire'));/**Indiquer ici le NAME pas la route !! */
     }
 
     protected function getLoginUrl()
